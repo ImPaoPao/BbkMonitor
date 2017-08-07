@@ -31,7 +31,7 @@ public class DemoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_demo);
 
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.container, DemoFragment.newInstance())
+                .add(R.id.container, DemoFragment2.newInstance())
                 .commit();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -69,7 +69,6 @@ public class DemoActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
